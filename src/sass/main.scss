@@ -11,12 +11,17 @@ h1, h2, h3, ul {
     margin: 0;
 }
 
+img {
+    -webkit-user-drag: none;
+}
+
 body {
     background-color: #fff;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .header {
@@ -112,7 +117,11 @@ body {
 
 .slider {
     position: relative;
+
     &__photoWrapper {
+        opacity: 0.1;
+        transition: all 0.5s ease;
+
         &__slideName {
             font-family: OpenSansRegular;
             font-size: 30px;
@@ -120,6 +129,18 @@ body {
             position: absolute;
             bottom: 20.43%;
             left: 5.8%;
+            display: none;
+        }
+    }
+}
+
+.center {
+    & .slider__photoWrapper {
+        opacity: 1;
+        transition: all 0.3s ease;
+
+        &__slideName {
+            display: block;
         }
     }
 }
@@ -144,10 +165,44 @@ body {
     }
 }
 
-.owl-prev {
+.about {
+    padding: 67px 0 0 0;
 
-}
+    & .container {
+        display: flex;
+    }
 
-.owl-next {
+    &__photoLineWrapper {
+        height: 442px;
+        width: 50px;
+        overflow: hidden;
 
+        &__photoLine {
+            height: 100%;
+            opacity: 0.47;
+            margin: 0 0 0 -453px;
+        }
+    }
+
+    &__photoWrapper {
+        margin: 0 0 0 66px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__article {
+        margin: 0 0 0 66px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: table;
+        align-self: center;
+
+        &__title {
+            font-family: OpenSansBold;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+    }
 }
