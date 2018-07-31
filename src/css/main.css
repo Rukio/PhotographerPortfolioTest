@@ -3870,19 +3870,21 @@ body {
 
 .services__offerings {
   padding: 45px 0 0 0;
-  display: grid;
-  grid-gap: 18px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 110px auto; }
+  column-count: 3;
+  -webkit-column-count: 3;
+  column-gap: 18px;
+  -webkit-column-gap: 18px; }
   .services__offerings__item {
     position: relative;
-    background-color: #406c8e; }
+    background-color: #406c8e;
+    overflow: hidden;
+    display: flex;
+    margin: 18px 0 0 0;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid; }
     .services__offerings__item__bg {
       opacity: 1; }
     .services__offerings__item__expl {
       position: absolute;
       top: 0;
       width: 100%; }
-    .services__offerings__item:nth-child(1) {
-      grid-row-start: 1;
-      grid-row-end: 3; }
