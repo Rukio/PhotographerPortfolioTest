@@ -3705,6 +3705,12 @@ body {
   max-width: 1170px;
   margin: 0 auto; }
 
+.title {
+  font-family: OpenSansBold;
+  font-size: 36px;
+  text-transform: uppercase;
+  position: relative; }
+
 .header {
   padding: 20px 0 0 0; }
   .header .container {
@@ -3798,7 +3804,7 @@ body {
     display: flex; }
   .about__photoLineWrapper {
     height: 442px;
-    width: 50px;
+    width: 70px;
     overflow: hidden; }
     .about__photoLineWrapper__photoLine {
       height: 100%;
@@ -3816,7 +3822,67 @@ body {
     justify-content: center;
     display: table;
     align-self: center; }
-    .about__article__title {
-      font-family: OpenSansBold;
-      font-size: 36px;
-      text-transform: uppercase; }
+    .about__article__title::before {
+      content: '';
+      width: 66px;
+      height: 3px;
+      background-color: #7dadd3;
+      position: absolute;
+      bottom: -8px;
+      left: 2px; }
+    .about__article__title::after {
+      content: '';
+      width: 86.5%;
+      height: 1px;
+      background-color: #ebeff2;
+      position: absolute;
+      bottom: -7px;
+      left: 68px; }
+    .about__article__paragraph {
+      font-family: OpenSansLight;
+      font-size: 15px;
+      padding: 37px 10px 12px 0;
+      letter-spacing: 0.28px;
+      line-height: 25px; }
+
+.services__titleWrapper {
+  text-align: center;
+  padding: 150px 0 0 0; }
+  .services__titleWrapper__title {
+    position: relative; }
+    .services__titleWrapper__title::before {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: #7dadd3;
+      position: absolute;
+      bottom: -8px;
+      left: calc(50% - 30px);
+      z-index: 1; }
+    .services__titleWrapper__title::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #ebeff2;
+      position: absolute;
+      bottom: -7px;
+      left: 68px; }
+
+.services__offerings {
+  padding: 45px 0 0 0;
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 110px auto; }
+  .services__offerings__item {
+    position: relative;
+    background-color: #406c8e; }
+    .services__offerings__item__bg {
+      opacity: 1; }
+    .services__offerings__item__expl {
+      position: absolute;
+      top: 0;
+      width: 100%; }
+    .services__offerings__item:nth-child(1) {
+      grid-row-start: 1;
+      grid-row-end: 3; }
