@@ -3883,8 +3883,58 @@ body {
     break-inside: avoid;
     -webkit-column-break-inside: avoid; }
     .services__offerings__item__bg {
-      opacity: 1; }
+      opacity: 1;
+      transition: opacity 0.3s ease; }
     .services__offerings__item__expl {
       position: absolute;
-      top: 0;
-      width: 100%; }
+      text-align: center;
+      padding: 115px 52px 0 52px;
+      margin: auto 0;
+      height: 300px;
+      top: calc(50% - 150px);
+      color: #fff;
+      transition: padding 0.3s ease; }
+      .services__offerings__item__expl__title {
+        opacity: 0.5;
+        font-family: OpenSansBold;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 15px 0 0 0;
+        transition: padding, opacity 0.3s ease; }
+      .services__offerings__item__expl__price {
+        font-family: OpenSansRegular;
+        font-size: 14px;
+        transform: translate();
+        display: block;
+        opacity: 0; }
+      .services__offerings__item__expl__desc {
+        font-family: OpenSansLight;
+        font-size: 14px;
+        line-height: 25px;
+        margin: 23px 0 0 0;
+        opacity: 0; }
+      .services__offerings__item__expl__button {
+        font-family: OpenSansBold;
+        font-size: 14px;
+        outline: none;
+        background: none;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 9px 52px;
+        margin: 25px 0 0 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.2s ease; }
+        .services__offerings__item__expl__button:hover {
+          color: #fff9;
+          border-color: #fff9; }
+    .services__offerings__item:hover .services__offerings__item__bg {
+      opacity: 0.3; }
+    .services__offerings__item:hover .services__offerings__item__expl {
+      padding: 0 52px 0 52px; }
+    .services__offerings__item:hover .services__offerings__item__expl__title,
+    .services__offerings__item:hover .services__offerings__item__expl__desc,
+    .services__offerings__item:hover .services__offerings__item__expl__price,
+    .services__offerings__item:hover .services__offerings__item__expl__button {
+      opacity: 1; }
