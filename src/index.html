@@ -438,35 +438,34 @@
                             <span class="feedback__contacts__data__mail">mail@demolink.org</span>
                         </div>
                     </div>
-                    <div class="feedback__contacts__map">
-    
-                    </div>
+                    <div class="feedback__contacts__map" id="map"></div>
                 </div>
                 <div class="feedback__writeme">
                     <div class="feedback__writeme__title-wrapper">
-                        <h2 class="feedback__writeme__form__title">Написать мне</h2>
+                        <h2 class="feedback__writeme__title title">Написать мне</h2>
                     </div>
                     <form class="feedback__writeme__form">
                         <div class="feedback__writeme__form__name-wrapper">
-                            <label class="feedback__writeme__form__name-label"
+                            <label class="label"
                                 for="name">Ваше имя</label>
-                            <input class="feedback__writeme__form__name"
+                            <input class="feedback__writeme__form__name form"
                                 type="text" name="name" id="name">
                         </div>
                         <div class="feedback__writeme__form__email-wrapper">
-                            <label class="feedback__writeme__form__email-label"
+                            <label class="label"
                                 for="mail">Почта</label>
-                            <input class="feedback__writeme__form__email"
+                            <input class="feedback__writeme__form__email form"
                                 type="email" name="mail" id="mail">
                         </div>
                         <div class="feedback__writeme__form__message-wrapper">
-                            <label class="feedback__writeme__form__message-label"
+                            <label class="label"
                                 for="message">Сообщение</label>
-                            <textarea class="feedback__writeme__form__message"
+                            <textarea class="feedback__writeme__form__message form"
                                 name="message" id="message"></textarea>
                         </div>
                         <div class="feedback__writeme__form__submit-button-wrapper">
-                            <button type="submit">Отправить сообщение</button>
+                            <button class="feedback__writeme__form__submit-button"
+                                type="submit">Отправить сообщение</button>
                         </div>
                     </form>
                 </div>
@@ -475,6 +474,10 @@
     </section>
     <script src="libs/jquery.js"></script>
     <script src="libs/owl-carusel/owl.carousel.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrHHfPI7NPfsR_YwpeP_HxZ1XD-PSxTYM&callback=initMap">
+    </script>
+    <script src="js/map.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
