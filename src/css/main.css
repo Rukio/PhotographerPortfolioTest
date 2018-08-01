@@ -4061,7 +4061,7 @@ body {
         grid-gap: 18px; }
 
 .comments {
-  padding: 150px 0 0 0; }
+  padding: 150px 0 150px 0; }
   .comments__title::before {
     content: '';
     width: 60px;
@@ -4119,3 +4119,61 @@ body {
     outline: none; }
     .comments__slider .owl-nav button:hover {
       color: #7dadd3 !important; }
+
+.feedback {
+  background-color: #6789a3; }
+  .feedback-bg {
+    background-image: url("../img/feedback_bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+    padding: 65px 0 0 0;
+    color: #fff; }
+  .feedback .container {
+    display: flex; }
+  .feedback__contacts {
+    width: 40.77%;
+    padding: 0 18px 0 0; }
+    .feedback__contacts__data__title::before {
+      content: '';
+      width: 66px;
+      height: 3px;
+      background-color: #7dadd3;
+      position: absolute;
+      bottom: -8px;
+      left: 2px; }
+    .feedback__contacts__data__title::after {
+      content: '';
+      width: 67.02%;
+      height: 1px;
+      background-color: #ebeff2;
+      position: absolute;
+      bottom: -7px;
+      left: 68px; }
+    .feedback__contacts__data__details {
+      font-family: OpenSansLight, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      line-height: 24px; }
+      .feedback__contacts__data__details-wrapper {
+        padding: 40px 100px 0 0; }
+    .feedback__contacts__data__tel {
+      font-family: OpenSansRegular, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      margin: 0 0 0 8px; }
+      .feedback__contacts__data__tel-wrapper {
+        margin: 17px 0 0 0; }
+        .feedback__contacts__data__tel-wrapper i {
+          transform: scaleX(-1);
+          font-size: 10px;
+          margin: 0 0 0 3px; }
+    .feedback__contacts__data__mail {
+      font-family: OpenSansRegular, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      margin: 0 0 0 6px; }
+      .feedback__contacts__data__mail-wrapper {
+        margin: 16px 0 0 0; }
+        .feedback__contacts__data__mail-wrapper i {
+          font-size: 15px; }
