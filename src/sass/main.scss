@@ -25,7 +25,7 @@ body {
 }
 
 .title {
-    font-family: OpenSansBold;
+    font-family: OpenSansBold, sans-serif;
     font-size: 36px;
     text-transform: uppercase;
     position: relative;
@@ -40,13 +40,13 @@ body {
 
     &__logoWrapper {
         & .logo {
-            font-family: OpenSansBold;
+            font-family: OpenSansBold, sans-serif;
             font-size: 24px;
             text-transform: uppercase;
             line-height: 22px;
 
             &-sign {
-                font-family: OpenSansLight;
+                font-family: OpenSansLight, sans-serif;
                 font-size: 10px;
                 text-transform: uppercase;
                 letter-spacing: 0.75px;
@@ -109,7 +109,7 @@ body {
     }
 
     .menuLink {
-        font-family: OpenSansBold;
+        font-family: OpenSansBold, sans-serif;
         font-size: 14px;
         text-transform: uppercase;
         color: $blackFont;
@@ -130,7 +130,7 @@ body {
         transition: all 0.5s ease;
 
         &__slideName {
-            font-family: OpenSansRegular;
+            font-family: OpenSansRegular, sans-serif;
             font-size: 30px;
             color: #fff;
             position: absolute;
@@ -230,7 +230,7 @@ body {
         }
 
         &__paragraph {
-            font-family: OpenSansLight;
+            font-family: OpenSansLight, sans-serif;
             font-size: 15px;
             padding: 37px 10px 12px 0;
             letter-spacing: 0.28px;
@@ -271,7 +271,7 @@ body {
     }
 
     &__offerings {
-        padding: 45px 0 0 0;
+        padding: 47px 0 0 0;
         column-count: 3;
         -webkit-column-count: 3;
         column-gap: 18px;
@@ -294,16 +294,16 @@ body {
             &__expl {
                 position: absolute;
                 text-align: center;
-                padding: 115px 52px 0 52px;
                 margin: auto 0;
-                height: 300px;
-                top: calc(50% - 150px);
+                height: 150px;
+                top: calc(63% - 75px);
+                transform: translateY(-12%);
                 color: #fff;
-                transition: padding 0.3s ease;
+                transition: transform 0.3s ease;
 
                 &__title {
                     opacity: 0.5;
-                    font-family: OpenSansBold;
+                    font-family: OpenSansBold, sans-serif;
                     font-size: 24px;
                     text-transform: uppercase;
                     padding: 15px 0 0 0;
@@ -311,7 +311,7 @@ body {
                 }
 
                 &__price {
-                    font-family: OpenSansRegular;
+                    font-family: OpenSansRegular, sans-serif;
                     font-size: 14px;
                     transform: translate();
                     display: block;
@@ -319,7 +319,7 @@ body {
                 }
 
                 &__desc {
-                    font-family: OpenSansLight;
+                    font-family: OpenSansLight, sans-serif;
                     font-size: 14px;
                     line-height: 25px;
                     margin: 23px 0 0 0;
@@ -327,7 +327,7 @@ body {
                 }
 
                 &__button {
-                    font-family: OpenSansBold;
+                    font-family: OpenSansBold, sans-serif;
                     font-size: 14px;
                     outline: none;
                     background: none;
@@ -360,6 +360,185 @@ body {
             &:hover &__expl__price,
             &:hover &__expl__button {
                 opacity: 1;
+            }
+        }
+    }
+}
+
+.white-button {
+    padding: 13px 58px;
+    outline: none;
+    background: none;
+    border: 2px solid $blue;
+    font-family: OpenSansBold, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color, background-color 0.2s ease;
+
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+    }
+
+    &-wrapper {
+        text-align: center;
+        padding: 25px 0 0 0;
+    }
+}
+
+.grid-small:hover .services__offerings__item__expl {
+    transform: translateY(-42.7%);
+    height: 300px;
+    top: 50%;
+}
+
+.grid-big:hover .services__offerings__item__expl {
+    transform: translateY(-50.0%);
+    height: 300px;
+    top: 50%;
+}
+
+.portfolio {
+    padding: 150px 0 0 0;
+
+    &__title {
+        &::before {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background-color: #7dadd3;
+            position: absolute;
+            bottom: -8px;
+            left: calc(50% - 30px);
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #ebeff2;
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+        }
+
+        &-wrapper {
+            text-align: center;
+        }
+    }
+
+    &__collection {
+        padding: 47px 0 0 0;
+        // column-count: 2;
+        // -webkit-column-count: 2;
+        // column-gap: 18px;
+        // -webkit-column-gap: 18px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 18px;
+
+        &__item {
+            position: relative;
+            display: flex;
+            background-color: #000;
+
+            &__bg {
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+
+            &__expl {
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                top: 80%;
+                color: #fff;
+                transition: all 0.3s ease;
+
+                &-title {
+                    font-family: OpenSansBold;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+
+                &-lookall {
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: OpenSansRegular;
+                    font-size: 14px;
+                    padding: 10px;
+                    display: block;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+
+                    &:hover {
+                        color: #fff9;
+                        transition: color 0.2s ease;
+                    }
+                }
+            }
+
+            &:hover &__expl {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:hover &__bg {
+                opacity: 0.4;
+            }
+
+            &:hover &__expl {
+                &-title {
+                    opacity: 1;
+                }
+
+                &-lookall {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-sec1 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 18px;
+
+            &:nth-child(2), &:nth-child(3) {
+                grid-template-columns: auto;
+            }
+
+            &-undersec1 {
+                display: grid;
+                grid-gap: 18px;
+                grid-template-columns: auto;
+            }
+
+            &-undersec2 {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 18px;
+            }
+        }
+
+        &-sec2 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 18px;
+
+            &-undersec1 {
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 18px;
+            }
+
+            &-undersec2 {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 18px;
             }
         }
     }
