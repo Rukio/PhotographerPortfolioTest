@@ -367,9 +367,6 @@ body {
         opacity: 0.3;
     }
 
-    &:hover &__expl {
-    }
-
     &:hover &__expl__title,
     &:hover &__expl__desc,
     &:hover &__expl__price,
@@ -795,9 +792,6 @@ body {
 
     &__name {
         height: 40px;
-
-        &-wrapper {
-        }
     }
 
     &__email {

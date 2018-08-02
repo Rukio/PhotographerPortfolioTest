@@ -23,11 +23,11 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        'src/libs/jquery/dist/jquery.min.js',
-        'src/js/googlemap.js',
-        'src/js/slidie.js',
-        'src/js/navigation.js',
-        'src/js/main.js'
+        'src/libs/jquery.js',
+        'src/libs/owl-carusel/owl.carousel.js',
+        'src/js/map.js',
+        'src/js/sliderset.js',
+        'src/js/nav.js'
     ])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())

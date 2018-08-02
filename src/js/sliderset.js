@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    var sliderPhotos = $('.slider-photo img');
-
     $(".slider-photo").owlCarousel({
         items: 1,
         stagePadding: 100,
