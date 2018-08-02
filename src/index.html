@@ -6,83 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photograph Portfolio - Test Task</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/hamburgers.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="ceiling">
         <div class="container">
-            <div class="header__logoWrapper">
+            <div class="header__logo-wrapper">
                 <h2 class="logo">Photomark</h2>
                 <p class="logo-sign">Портфолио Фотографа</p>
             </div>
             <nav class="header__menu">
                 <ul class="header__menu__list">
                     <li class="header__menu__list__item">
-                        <a href="#" class="menuLink">Обо мне</a>
+                        <a id="scroll" href="#about" class="menu-link">Обо мне</a>
                     </li>
                     <li class="header__menu__list__item">
-                        <a href="#" class="menuLink">Услуги</a>
+                        <a id="scroll" href="#services" class="menu-link">Услуги</a>
                     </li>
                     <li class="header__menu__list__item">
-                        <a href="#" class="menuLink">Портфолио</a>
+                        <a id="scroll" href="#portfolio" class="menu-link">Портфолио</a>
                     </li>
                     <li class="header__menu__list__item">
-                        <a href="#" class="menuLink">Отзывы</a>
+                        <a id="scroll" href="#comments" class="menu-link">Отзывы</a>
                     </li>
                     <li class="header__menu__list__item">
-                        <a href="#" class="menuLink">Контакты</a>
+                        <a id="scroll" href="#feedback" class="menu-link">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <nav class="header__social">
-                <ul class="header__social__list">
-                    <li class="header__social__list__item">
-                        <a href="#" class="menuLink"><i class="fab fa-facebook-f"></i></a>
+            <nav class="social">
+                <ul class="social__list">
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-facebook-f"></i></a>
                     </li>
-                    <li class="header__social__list__item">
-                        <a href="#" class="menuLink"><i class="fab fa-google-plus-g"></i></a>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-google-plus-g"></i></a>
                     </li>
-                    <li class="header__social__list__item">
-                        <a href="#" class="menuLink"><i class="fab fa-vk"></i></a>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-vk"></i></a>
                     </li>
-                    <li class="header__social__list__item">
-                        <a href="#" class="menuLink"><i class="fab fa-twitter"></i></a>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-twitter"></i></a>
                     </li>
-                    <li class="header__social__list__item">
-                        <a href="#" class="menuLink"><i class="fab fa-behance"></i></a>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-behance"></i></a>
                     </li>
-                    <li class="header__social__list__item">
-                        <a href="#" class="menuLink"><i class="fab fa-instagram"></i></a>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-instagram"></i></a>
                     </li>
-                    <li class="header__social__list__item">
-                        <a href="#" class="menuLink"><i class="fab fa-pinterest-p"></i></a>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-pinterest-p"></i></a>
                     </li>
                 </ul>
             </nav>
+            <!-- <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button> -->
         </div>
     </header>
     <section class="slider">
         <div class="slider-photo owl-carousel">
-            <div class="slider__photoWrapper">
-                <h3 class="slider__photoWrapper__slideName">Название фото</h3>
-                <img style="width: 1170px" src="img/slider1_photo.png" alt="Slider 1 Photo">
+            <div class="slider__photo-wrapper">
+                <h3 class="slider__photo-wrapper__slide-name">Название фото</h3>
+                <img src="img/slider1_photo.png" alt="Slider 1 Photo">
             </div>
-            <div class="slider__photoWrapper">
-                <h3 class="slider__photoWrapper__slideName">Название фото 2</h3>
-                <img style="width: 1170px" src="img/slider1_photo.png" alt="Slider 1 Photo">
+            <div class="slider__photo-wrapper">
+                <h3 class="slider__photo-wrapper__slide-name">Название фото 2</h3>
+                <img src="img/slider1_photo.png" alt="Slider 1 Photo">
             </div>
-            <div class="slider__photoWrapper">
-                <h3 class="slider__photoWrapper__slideName">Название фото 3</h3>
-                <img style="width: 1170px" src="img/slider1_photo.png" alt="Slider 1 Photo">
+            <div class="slider__photo-wrapper">
+                <h3 class="slider__photo-wrapper__slide-name">Название фото 3</h3>
+                <img src="img/slider1_photo.png" alt="Slider 1 Photo">
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
-            <div class="about__photoLineWrapper">
-                <img class="about__photoLineWrapper__photoLine" src="img/about_photo.png" alt="About me - Side line">
+            <div class="about__photo-line-wrapper">
+                <img class="about__photo-line" src="img/about_photo.png" alt="About me - Side line">
             </div>
-            <div class="about__photoWrapper">
-                <img class="about__photoWrapper__photo"  src="img/about_photo.png" alt="About me - My photo">
+            <div class="about__photo-wrapper">
+                <img class="about__photo"  src="img/about_photo.png" alt="About me - My photo">
             </div>
             <div class="about__article">
                 <h2 class="about__article__title title">Обо мне</h2>
@@ -102,8 +108,8 @@
     </section>
     <section class="services">
         <div class="container">
-            <div class="services__titleWrapper">
-                <h2 class="services__titleWrapper__title title">Услуги</h2>
+            <div class="services__title-wrapper">
+                <h2 class="services__title-wrapper__title title" id="services">Услуги</h2>
             </div>
             <div class="services__offerings">
                 <div class="services__offerings__item grid-big">
@@ -205,7 +211,7 @@
     <section class="portfolio">
         <div class="container">
             <div class="portfolio__title-wrapper">
-                <h2 class="portfolio__title title">Портфолио</h2>
+                <h2 class="portfolio__title title" id="portfolio">Портфолио</h2>
             </div>
             <div class="portfolio__collection">
                 <div class="portfolio__collection-sec1">
@@ -324,7 +330,7 @@
     <section class="comments">
         <div class="container">
             <div class="comments__title-wrapper">
-                <h2 class="comments__title title">Отзывы</h2>
+                <h2 class="comments__title title" id="comments">Отзывы</h2>
             </div>
             <div class="comments__slider-wrapper">
                 <div class="comments__slider owl-carousel">
@@ -420,7 +426,7 @@
                 <div class="feedback__contacts">
                     <div class="feedback__contacts__data">
                         <div class="feedback__contacts__data__title-wrapper">
-                            <h2 class="feedback__contacts__data__title title">Контакты</h2>
+                            <h2 class="feedback__contacts__data__title title" id="feedback">Контакты</h2>
                         </div>
                         <div class="feedback__contacts__data__details-wrapper">
                             <p class="feedback__contacts__data__details">
@@ -449,19 +455,19 @@
                             <label class="label"
                                 for="name">Ваше имя</label>
                             <input class="feedback__writeme__form__name form"
-                                type="text" name="name" id="name">
+                                type="text" name="name" id="name" required>
                         </div>
                         <div class="feedback__writeme__form__email-wrapper">
                             <label class="label"
                                 for="mail">Почта</label>
                             <input class="feedback__writeme__form__email form"
-                                type="email" name="mail" id="mail">
+                                type="email" name="mail" id="mail" required>
                         </div>
                         <div class="feedback__writeme__form__message-wrapper">
                             <label class="label"
                                 for="message">Сообщение</label>
                             <textarea class="feedback__writeme__form__message form"
-                                name="message" id="message"></textarea>
+                                name="message" id="message" required></textarea>
                         </div>
                         <div class="feedback__writeme__form__submit-button-wrapper">
                             <button class="feedback__writeme__form__submit-button"
@@ -472,12 +478,52 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright-wrapper">
+                <span class="footer__copyright">
+                    Photographer Mark © 2017. Все права защищены
+                </span>
+            </div>
+            <nav class="social">
+                <ul class="social__list">
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-vk"></i></a>
+                    </li>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="social__list__item">
+                        <a href="#" class="menu-link"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__up-button-wrapper">
+                <a id="scroll" href="#ceiling" class="footer__up-button">
+                    <i class="fas fa-angle-double-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="libs/jquery.js"></script>
     <script src="libs/owl-carusel/owl.carousel.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrHHfPI7NPfsR_YwpeP_HxZ1XD-PSxTYM&callback=initMap">
     </script>
     <script src="js/map.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/sliderset.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
